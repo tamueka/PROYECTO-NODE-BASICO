@@ -2,7 +2,6 @@
 
 const mongoose = require('mongoose');
 const fs = require('fs');
-const flow = require('../lib/flowControl');
 const configAnuncios = require('../local_config').anuncios;
 const path = require('path');
 

@@ -8,11 +8,16 @@
 <body>
     <% include partials/menu %>
 
+    <div class="container-fluid bg-3 text-center">
+      <h2>
+        <%= page %>
+      </h2>
+    </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Lista de anuncios</h1>
-            <p class="lead">Listando:<%= anuncios.length %> de <%= total %>
+            <h1 class="text-center">Lista de anuncios</h1>
+            <p class="lead">Listando: <%= anuncios.length %> de <%= total %>
             </p>
         </div>
     </div>

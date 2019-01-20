@@ -86,3 +86,7 @@ h2{
 .prueba{
   color:red;
 }
+
+table tr td img {
+  max-height: 20px;
+}

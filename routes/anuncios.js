@@ -21,7 +21,12 @@ router.get('/', async function (req, res, next) {
         }
 
         const { total, rows } = await Anuncio.list(filters, start, limit, sort, includeTotal);
-        res.render('anuncios', { total, anuncios: rows});
+        res.render('anuncios', { 
+            total, 
+            anuncios: rows,
+            page: 'Anuncios',
+            menuId: 'ANUNCIOS'
+        });
     } catch (err) {
         return res.next(err);
     }
